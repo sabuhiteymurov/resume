@@ -309,7 +309,7 @@ TSWLatexianTemp*
 *.glstex
 
 # PDF outputs of LaTex
-# *.pdf
+*.pdf
 
 # VsCode workspaces
 *.code-workspace
