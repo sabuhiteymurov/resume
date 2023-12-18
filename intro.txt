@@ -1,0 +1,9 @@
+Hello, my name is Sabuhi Teymurov. I am 23 years old and have experience as a Full Stack Mobile Developer and Front-End Developer. Most recently, I worked as a Front-End Developer at Ferrum Capital where I converted a desktop application to a web app and implemented performance optimizations.
+
+To start off, I am very interested in this Middle Front-End Developer role at DICEUS. I am drawn to your focus on delivering high-quality custom software solutions using agile methodologies. My background aligns well with these priorities.
+
+In past roles, I have successfully collaborated cross-functionally and provided guidance to junior developers. I am comfortable working in an agile environment and have experience implementing user stories, participating in standups, retrospectives and sprint planning.
+
+Some of my key technical skills include React, JavaScript, TypeScript, React Native and testing frameworks like Jest. I am constantly learning and staying up-to-date on front-end best practices and technologies.
+
+I am a self-motivated problem-solver who takes pride in writing clean, well-tested code. Although I have intermediate experience overall, I am confident I can quickly ramp up and contribute as a Middle Front-End Developer here. I am excited by the chance to grow technically while delivering value.
