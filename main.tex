@@ -1,8 +1,10 @@
 \documentclass{resume} % Use the custom resume.cls style
 
+\usepackage[options]{graphicx}
 \usepackage[left=0.4 in,top=0.4in,right=0.4 in,bottom=0.4in]{geometry} % Document margins
 \newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}} 
 \newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+
 \name{Sabuhi Teymurov} % Your name
 % You can merge both of these into a single line, if you do not have a website.
 \address{+994(77)-740-16-00 \\ Baku, Azerbaijan} 
@@ -10,8 +12,15 @@
 
 \begin{document}
 
+% PROFILE PICTURE
+\begin{figure}[t!]
+    \centering
+    \includegraphics[width=0.15\textwidth]{figs/profile-photo.png}
+    \label{fig:my_label}
+\end{figure}
+
 %----------------------------------------------------------------------------------------
-%	OBJECTIVE
+%	OBJECTIVE SECTION
 %----------------------------------------------------------------------------------------
 
 \begin{rSection}{OBJECTIVE}
@@ -22,7 +31,7 @@
 \end{rSection}
 
 %----------------------------------------------------------------------------------------
-% TECHINICAL STRENGTHS	
+% TECHINICAL SKILLS SECTION
 %----------------------------------------------------------------------------------------
 \begin{rSection}{SKILLS}
 
@@ -79,12 +88,6 @@ Expargo LTD \hfill \textit{Turkey, Remote}
 
 \begin{rSection}{PROJECTS}
 \vspace{-1.25em}
-% \item \textbf{
-%     Nool Agent Mobile App} {Nool Agent is an agenda app of Nool LLC, developed for drivers.
-%     }
-% \item \textbf{
-%     Nool Customer Mobile App} { App mainly focused for customers.  
-%     }
 \item \textbf{
 Kalee - Appointment Scheduling App} {Kalee is a software application designed to help individuals manage their appointments and schedules. It provides a convenient way to schedule and book appointments online, eliminating the need for manual appointment scheduling. Over 1000 people have used it so far, with 5000+ meetings being scheduled! \href{https://www.producthunt.com/products/kalee}{(Project link)} \begin{itemize}
     \itemsep -3pt {} \item Led the project's front end, including development and implementation of the app from scratch.
@@ -95,13 +98,6 @@ Kalee - Appointment Scheduling App} {Kalee is a software application designed to
 \end{rSection} 
 
 %----------------------------------------------------------------------------------------
-% \begin{rSection}{Extra-Curricular Activities} 
-% \begin{itemize}
-%     \item 	Actively write \href{https://www.faangpath.com/blog/}{blog posts} and social media posts (\href{https://www.tiktok.com/@faangpath}{TikTok}, \href{https://www.instagram.com/faangpath/?hl=en}{Instagram}) viewed by over 20K+ job seekers per week to help people with best practices to land their dream jobs. 
-%     \item	Sample bullet point.
-% \end{itemize}
-
-% \end{rSection}
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
