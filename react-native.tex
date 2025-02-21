@@ -1,0 +1,134 @@
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage[options]{graphicx}
+\usepackage[left=0.4 in,top=0.4in,right=0.4 in,bottom=0.4in]{geometry} % Document margins
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}} 
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+
+\name{Sabuhi Teymurov} % Your name
+% You can merge both of these into a single line, if you do not have a website.
+\address{+994(77)-740-16-00 \\ Baku, Azerbaijan} 
+\address{\href{mailto:hello@sabuhiteymurov.com}{hello@sabuhiteymurov.com} \\ \href{https://www.linkedin.com/in/sabuhi-teymurov/}{LinkedIn} \\ \href{https://github.com/sabuhiteymurov}{Github}}  %
+
+\begin{document}
+
+% PROFILE PICTURE
+\begin{figure}[t!]
+    \centering
+    \includegraphics[width=0.15\textwidth]{figs/profile-photo.png}
+    \label{fig:my_label}
+\end{figure}
+
+%----------------------------------------------------------------------------------------
+%	OBJECTIVE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{OBJECTIVE}
+
+{Results-driven software developer with a passion for developing and maintaining software applications. I'm an Open Source enthusiast and also made contributions on several communities. I seek challenging projects that continually push the boundaries of my abilities, knowing that true growth and improvement stem from embracing unfamiliar territories and venturing beyond the comfort zone. Also, I care about collaboration, code quality and happy customers. }
+
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+% TECHINICAL SKILLS SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{SKILLS}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+Programming Languages & TypeScript, Go, C++\\
+Frameworks & React Native, Expo\\
+Libraries & React Navigation, Redux, Mapbox, OneSignal, RNFirebase, Socket.IO\\
+APIs & RESTful, GraphQL\\
+Payment Integration & Stripe, RevenueCat\\
+DevOps & GitHub Actions, CI/CD, In-app updates\\
+Testing & Jest, Detox, Playwright\\
+Native Development & Creating native packages using Turbo Modules (JSI) or Nitro Modules\\
+Soft Skills & Team Collaboration, Problem Solving, Communication\\
+\end{tabular}\\
+\end{rSection}
+
+\begin{rSection}{EXPERIENCE}
+
+\textbf{Software Engineer} \hfill Mar 2023 - Present\\
+Dosty \hfill \textit{Riga, Latvia, Hybrid}
+\textit{(Pet care technology company)}
+ \begin{itemize}
+    \itemsep -3pt {} 
+        \item Refactored and migrated the existing React (Vite) and Next.js codebase to TypeScript.
+        \item Implemented authentication with Next-Auth, including Apple and Google OAuth logins.
+        \item Integrated Stripe with RevenueCat for secure one-time payments and subscription management.
+        \item Utilized server actions, and React Server Components for improved security.
+        \item Refactored large parts of the codebase to improve performance and maintainability.
+ \end{itemize}
+
+\textbf{React Native Developer} \hfill May 2023 - Present\\
+Nool LLC \hfill \textit{UAE, Remote}
+\textit{(Delivery service company)}
+
+\href{https://apps.apple.com/us/app/nool/id6478508548}{(Nool Customer mobile app)}
+\href{https://apps.apple.com/us/app/nool-driver/id6478509151}{(Nool Driver mobile app)}
+ \begin{itemize}
+    \itemsep -3pt {} 
+        \item Collaboratively developed two mobile applications for Nool LLC, a delivery service company. Engaged closely with the product owner and UX/UI designer, demonstrating leadership in the application development process due to my expertise in the tools and software used. As part of the team, I contributed to the architecture, design, and development of both applications, which were tailored for customers and drivers respectively.
+        \item Implemented the foreground and background geolocation tracking for the driver application with the help of the application task manager and socket.io, ensuring the driver's location is accurately tracked and updated in real-time.
+        \item Utilized a range of technology stacks, including Expo and its modules, RN Turbo Modules, detox for testing, Apollo GraphQL client, GraphQL subscriptions, Stripe, OneSignal, and more.
+        \item Utilized @react-native-firebase/messaging for real-time communication between drivers and customers.
+        \item Supported RTL layouts and internationalization with i18next and expo-localization, making the app accessible to a wider audience. 
+        \item Involved in every step of publishing the applications to the App Store and Google Play, ensuring compliance with platform guidelines and successful deployment.
+ \end{itemize}
+
+\textbf{Front-End Developer} \hfill Aug 2022 - Mar 2023\\
+Ferrum Capital \hfill \textit{Baku, Azerbaijan}
+\textit{(Financial technology company)}
+ \begin{itemize}
+    \itemsep -3pt {}
+    \item 
+    Converted ERP desktop app initially built with .NET Windows Forms to web application. App actively used by multiple departments for the problematic debtor tracking. Enhanced the app performance by creating an infinite scrollable table capable of handling more than 500,000 data entries with the help of the tanstack/react-table, tanstack/react-virtual libraries and tanstack/react-query's useInfiniteQuery. Caching techniques were implemented by incorporating technologies like React Query and RTK Query for further enhancing performance.
+    \item 
+    My responsibilities also included the conversion of a Pawnbroker web application of "City Finance", originally built with Express.js and jQuery, into a Next.js application. I was a key contributor to the development of a leasing service web application for Turbo.az. Another significant part of my role was implementing role-based authentication, using the NextAuth library.
+ \end{itemize}
+\end{rSection} 
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{PROJECTS}
+\vspace{-1.25em}
+\item \textbf{
+Kalee - Appointment Scheduling App} {Kalee is a software application designed to help individuals manage their appointments and schedules. It provides a convenient way to schedule and book appointments online, eliminating the need for manual appointment scheduling. Over 1000 people have used it so far, with 5000+ meetings being scheduled! \href{https://www.producthunt.com/products/kalee}{(Project link)} \begin{itemize}
+    \itemsep -3pt {} \item Led the project's front end, including development and implementation of the app from scratch.
+    \item Implemented a real-time appointment booking system using Socket.IO client.
+   \item Integrated the app with Google Meets, Zoom, and Microsoft Teams platforms. Constructed authentication and authorization (sign-in/sign-up/JWT refresh token strategy) using Axios interceptors and the NextAuth.js library. \end{itemize}}
+\item \textbf{
+    Ferrum Capital Corporate Website} {The main technologies utilized were jQuery, CSS, and Laravel blade templates. API integration and validation across the entire website. The website is regularly tested with Google Lighthouse for usability, speed, and other quality factors. Ensured the website is accessible across many platforms, including devices using older versions of macOS and iOS. \href{https://ferrumcapital.az}{(Project link)}}
+\end{rSection} 
+
+%----------------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+    
+    {\bf Bachelor of IT Management}, Azerbaijan Tourism and Management University \hfill {2017 - 2021}
+    %Minor in Linguistics \smallskip \\
+    %Member of Eta Kappa Nu \\
+    %Member of Upsilon Pi Epsilon \\
+
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+% \begin{rSection}{Leadership} 
+% \begin{itemize}
+%     \item Admin for the \href{https://discord.com/invite/WWbjEaZ}{FAANGPath Discord community} with over 6000+ job seekers and industry mentors. Actively involved in facilitating online events, career conversations, and more alongside other admins and a team of volunteer moderators! 
+% \end{itemize}
+
+
+% \end{rSection}
+
+
+\end{document}
