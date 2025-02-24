@@ -1,11 +1,16 @@
 ## Environment
 
-- Install LaTeX Workshop VsCode extension
-- Install following packages on linux:
-  `sudo apt-get -y latexmk install texlive-latex-recommended texlive-pictures texlive-latex-extra`
+- Install LaTeX Workshop VSCode extension
+- Install the following packages on Linux:
+  - On Ubuntu:
+    `sudo apt-get -y install latexmk texlive-latex-recommended texlive-pictures texlive-latex-extra`
+  - On Fedora:
+    `sudo dnf -y install latexmk texlive-scheme-basic texlive-pictures texlive-collection-latexextra`
 
 ## Watching .tex file
 
-- You can watch `.tex` file and generate live updates to PDF file by running this script:
+- You can watch a `.tex` file and generate live updates to the PDF file by running this bash script:
 
-`sh watch.sh`
+`sh watch.sh <path-to-tex-file>`
+
+Replace `<path-to-tex-file>` with the actual path to your `.tex` file.
