@@ -1,14 +1,11 @@
-%% start of file `template.tex'.
+%% start of file `onvy_cover_letter.tex'.
 %% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
 %
 % This work may be distributed and/or modified under the
 % conditions of the LaTeX Project Public License version 1.3c,
 % available at http://www.latex-project.org/lppl/.
-%Version for spanish users, by dgarhdez
 
 \documentclass[11pt,a4paper,roman]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
-\usepackage[spanish,es-lcroman]{babel}
-
 
 % moderncv themes
 \moderncvstyle{classic}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
@@ -18,7 +15,13 @@
 
 % character encoding
 \usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
-%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% fix for bullet points showing as [regular]
+\usepackage{enumitem}
+\setlist[itemize]{label=\textbullet}
+
+% fix for email symbol showing as [regular]
+\renewcommand*{\emailsymbol}{{\small\texttt{@}}\,}
 
 % adjust the page margins
 \usepackage[scale=0.75]{geometry}
@@ -29,53 +32,46 @@
 \name{Sabuhi}{Teymurov}
 \title{Cover letter}
 \vspace{1em}
-\phone[mobile]{+994-77-740-16-00}    
+\phone[mobile]{+49-151-722-63944}
 \vspace{1em}              
 \email{hello@sabuhiteymurov.com}                               % optional, remove / comment the line if not wanted
-%\homepage{www.johndoe.com}                         % optional, remove / comment the line if not wanted
-%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
-%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
-%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
 
-% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
-%\makeatletter
-%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
-%\makeatother
-%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
-
-% bibliography with mutiple entries
-%\usepackage{multibib}
-%\newcites{book,misc}{{Books},{Others}}
-%----------------------------------------------------------------------------------
-%            content
-%----------------------------------------------------------------------------------
 \begin{document}
 %-----       letter       ---------------------------------------------------------
-% recipient data
-% \recipient{Cover Letter}{Departamento, Empresa}
 \date{\today}
-\opening{Dear Hiring Manager,}
-\closing{Please do not hesitate to contact me if you have any further questions or would like to schedule an interview.
-}
-% \enclosure[]{}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
+\opening{Dear ONVY Hiring Team,}
+\closing{I look forward to discussing how my mobile development expertise can contribute to ONVY's mission of revolutionizing health management.}
+
 \makelettertitle
 
-I am excited to apply for the Front-End Developer position at Yopeso. As a Front-end developer with 2 years of work experience, I have gained a solid foundation in Javascript, Typescript and its frameworks. I specialize in React.js, Next.js and React Native technologies.
+I am excited to apply for the React Native Mobile App Developer position at ONVY HealthTech Group. Your mission to shift from reactive sick care to proactive health optimization resonates deeply with my passion for building technology that makes a real difference in people's lives. The opportunity to work on an AI-powered platform that integrates data from over 320 wearables to provide personalized health insights is exactly the kind of meaningful project that drives my enthusiasm as a developer.
 
-During my professional journey, I have developed various front-end projects for clients across different industries. These projects have enabled me to develop skills in writing clean and scalable code, optimizing website performance, and providing seamless user experiences. I enjoy working with a team and learning from my colleagues, as I believe that this helps me develop my skills and contribute to the success of the project.
+My professional journey has equipped me with the exact technical expertise ONVY needs. During my nearly two years as a React Native Developer at Nool LLC, I successfully delivered two production mobile applications from concept to App Store and Google Play deployment. This experience involved close collaboration with product owners and UX/UI designers - similar to the cross-functional teamwork emphasized in your job description.
 
-I am impressed by your works for innovation and commitment to sustainability, and I am excited to contribute to your mission. As a software developer, I am eager to learn new technologies, collaborate with experienced developers, and contribute to the success of your projects.
+Here's what I bring to your team:
 
-Thank you for considering my application. I would appreciate the opportunity to discuss how my skills and experience align with the needs of your company.
+\begin{itemize}
+\item Extensive React Native and TypeScript experience, having built scalable mobile applications that handle real-time data processing
+\item Hands-on experience with both GraphQL and REST API integration, crucial for connecting mobile apps to complex backend systems
+\item Proven track record with app store management, having guided applications through the entire publishing process on both iOS and Android platforms
+\item Experience with payment systems integration, including Stripe and RevenueCat for subscription management - valuable for health app monetization
+\item Strong background in real-time features using Socket.IO and Firebase messaging, essential for dynamic health data updates
+\item Experience implementing complex features like geolocation tracking and background processing, relevant for wearable data integration
+\item GitHub Actions experience for CI/CD pipelines, supporting your DevOps requirements
+\item Multilingual app development with RTL support and internationalization, useful for ONVY's global reach
+\end{itemize}
 
+What excites me most about ONVY is your commitment to turning complex health data into simple, empowering interfaces. At Nool, I faced similar challenges when implementing real-time driver tracking and creating intuitive user experiences for both customers and drivers. The complexity of coordinating multiple data sources while maintaining a seamless user experience mirrors what's required for effective health data visualization.
 
+Your emphasis on taking responsibility for outcomes rather than just tasks aligns perfectly with my approach to software development. Throughout my career, I've consistently taken ownership of entire features from conception to deployment, ensuring they not only function correctly but genuinely serve user needs.
 
-\vspace{0.5cm}
+The remote-first culture at ONVY particularly appeals to me, as I've successfully collaborated with distributed teams throughout my career while maintaining high code quality and meeting ambitious deadlines. I thrive in environments that value disciplined work ethics and clear communication.
 
+I'm genuinely excited about the possibility of contributing to ONVY's groundbreaking work in predictive health analytics. The chance to build technology that empowers people to take control of their health journey is the kind of impactful work that motivates me every day as a developer.
+
+Thank you for considering my application. I would be thrilled to discuss how my React Native expertise and passion for health technology can help ONVY continue pushing the boundaries of personalized health management.
 
 \makeletterclosing
 
 \end{document}
-
-
-%% end of file `template.tex'.
+%% end of file `onvy_cover_letter.tex'.
